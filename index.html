@@ -7,33 +7,52 @@
 <body>
 
 <header>
-    <h1>Fletcher Waller, BSc</h1>
+    <h1>Fletcher Waller</h1>
+    <!-- <aside>
+        Masters Student<br>
+        University of Victoria
+    </aside> -->
 </header>
 
 <nav>
-    <aside>
-        Masters Student<br>
-        University of Victoria
-    </aside>
+
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
-        <li><a href="#">Outreach</a></li>
-        <li><a href="#">Teaching</a></li>
-        <li><a href="#">About Me</a></li>
+        <li><a href="lgbtqresources.html">LGBTQ+ Resources</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
     </ul>
 </nav>
 
 <main>
     <div class="side-by-side">
-        <img src="people_telescope.jpg" width="350">
+        <img src="fletcher_telescope.jpeg" width="320", height="426">
         <section>
             <h1>Fletcher Waller</h1>
             <h2 class="underborder">Masters Student</h2>
-            <p>I'm a masters student working on UFDs with hi-res spectroscopy and stuff</p>
+            <p>Hi there! I'm a graduate student at the University of Victoria, studying 
+                the small, ancient galaxies that orbit the Milky Way. I'm interested in the chemical compositions of stars in these galaxies
+                because they hold clues to how the first stars exploded, and how the first galaxies formed. I use high-resolution spectroscopy for my research, 
+                and this led me to an internship at Gemini South, working on the new optical GHOST spectrograph, where I test the data reduction pipeline. 
+                I will be finishing my masters in late spring 2023, and moving on to whatever next big adventure life has in store for me!
+                  </p>
             <ul class="buttons">
-                <li><a href="cv.html">Download My CV</a></li>
-                <li><a href="#">Find me on ADS</a></li>
+                <li><a href="Fletcher_Waller___Curriculum_Vitae.pdf" target="_blank">Download My CV</a></li>
+               </ul>
+            <p>
+            </p>
+            <p>
+            </p>
+            <ul class="buttons">
+                <li><a href="https://ui.adsabs.harvard.edu/search/p_=0&q=(%3Dauthor%3A%22Waller%2C%20Fletcher%22%20or%20%3Dauthor%3A%22Waller%2C%20F%20M%22%20or%20%3Dauthor%3A%22Mason%20Waller%2C%20Fletcher%22)%20AND%20year%3A2011-2100%20&sort=date%20desc%2C%20bibcode%20desc" target="_blank">Find me on ADS</a></li>
+            </ul>
+            <p>
+            </p>
+            <p>
+            </p>
+            <ul class="buttons">
+                <li><a href="https://orcid.org/0000-0003-3247-7121" target="_blank">ORCiD</a></li>
             </ul>
         </section>
     </div>
@@ -56,6 +75,7 @@
             </tr>
         </table>
     </section>
+    
 </main>
 <footer>
     <small>
@@ -76,48 +96,62 @@
         margin: 0;
         align-items: center;
         justify-content: center;
-        background-image: url("clouds.jpg");
+        background-color: #05071a;
+        background-image: url("soar.jpeg");
         background-size: cover;
         height: 220px;
+
     }
+
     header h1 {
         margin: 0;
         text-align: center;
-        color: white;
-        /*font-size: 45px;*/
+        text-shadow: 2px 3px #323641;
+        color: #e3ecf2;
+        font-size: 65px;
         font-weight: 400;
         position: relative;
-        top: 40px;
+        top: 10px;
+    }
+    header aside {
+        font-size: 80%;
+        margin-bottom: 3em;
+        color: #e3ecf2
     }
     nav {
-        background-color: rgb(153, 143, 124);
+        background-color: #05071a;
         text-align: center;
         justify-content: center;
         padding: 5px;
+        /* background-image: url("moon.jpeg"); */
+        background-size: auto;
+        border: 0px solid #00001c;
     }
-    nav aside {
-        font-size: 80%;
-        margin-bottom: 3em;
-    }
+
     nav ul {
         display: flex;
         justify-content: space-around;
         list-style-type: none;
     }
     nav, nav a {
-        color: white;
+        color: #e3ecf2;
         text-decoration: none;
+        font-weight: 600;
+        font-size: 13px;
+        text-shadow: 1px 1px #000000;
     }
     nav a:hover {
-        color: rgb(221, 241, 156);
+        color: (#e3ecf2);
     }
     main {
         padding: 70px;
-        border: 1px solid rgb(216, 240, 236);
-        background-color: rgb(216, 240, 236);
+        border: 1px solid hex(#05071a);
+        background-color:#05071a;
         /*font-size: 16px;*/
         font-weight: 400;
         line-height: 25px;
+        color: #05071a;
+        background-image: url("oceantall.jpeg");
     }
     main h1 {
         font-size: 180%;
@@ -128,6 +162,7 @@
         font-size: 100%;
         font-weight: normal;
         margin: 0;
+        color: #e3ecf2;
     }
     main img {
         padding-right: 2em;
@@ -140,9 +175,11 @@
         display: flex;
         justify-content: space-around;
     }
+
     .underborder {
         border-bottom: 2px solid rgb(30, 30, 30);
         padding-bottom: 8px;
+        color: #05071a;
     }
     ul.buttons {
         display: flex;
@@ -153,26 +190,29 @@
     }
     ul.buttons li {
         flex-grow: 1;
-        text-align: center;
+        text-align: left;
     }
     ul.buttons a {
         text-decoration: none;
         color: black;
         /*font-size: 90%;*/
         border: 1px solid #333333;
-        padding: 0.7em 1em;
+        padding: 0.6em 2em;
     }
     section#education table {
         width: 100%;
+        color: #05071a;
     }
     section#education table td span.indent {
         padding-left: 2em;
+        color: #05071a;
     }
     footer {
         padding: 2em;
-        color: #999999;
+        color: #e3ecf2;
         font-size: 9pt;
         text-align: center;
+        background-color:#05071a;
     }
 </style>
 </html>
