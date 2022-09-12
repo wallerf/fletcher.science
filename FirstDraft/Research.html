@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research</title>
+</head>
+<body>
+
+<header>
+    <h1>Fletcher Waller</h1>
+</header>
+<nav>
+    <aside>
+        Graduate Student<br>
+        University of Victoria
+    </aside>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="lgbtqresources.html">LGBTQ+ Resources</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="side-by-side">
+        <section>
+            <h1>Fletcher Waller</h1>
+            <h2 class="underborder">Masters Student</h2>
+            <p>I'm a masters student working on UFDs with hi-res spectroscopy and stuff</p>
+            <ul class="buttons">
+                <li><a href="cv.html">Download My CV</a></li>
+                <li><a href="#">Find me on ADS</a></li>
+            </ul>
+        </section>
+    </div>
+    <section id="education">
+        <h1 class="underborder">Education</h1>
+        <table>
+            <tr>
+                <td><b>M.S., Astronomy</b>, University of Victoria</td>
+                <td>
+                    2023
+                </td>
+            </tr>
+            <tr>
+                <td><b>B.S., Physics and Astronomy</b>, University of Victoria<br>
+                    <span class="indent"></span>
+                </td>
+                <td>
+                    2020
+                </td>
+            </tr>
+        </table>
+    </section>
+</main>
+<footer>
+    <small>
+        © 2022 Fletcher M. Waller. 
+    </small>
+</footer>
+
+</body>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: arial, sans-serif;
+        font-size: 11pt;
+    }
+    header {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        background-image: url("strait.jpeg");
+        background-size: cover;
+        height: 220px;
+    }
+    header h1 {
+        margin: 0;
+        text-align: center;
+        text-shadow: 2px 2px #000000;
+        color: rgb(255, 255, 255);
+        font-size: 65px;
+        font-weight: 400;
+        position: relative;
+        top: 10px;
+    }
+    nav {
+        background-color: rgb(153, 143, 124);
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    nav aside {
+        font-size: 80%;
+        margin-bottom: 3em;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    nav, nav a {
+        color: white;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: rgb(221, 241, 156);
+    }
+    main {
+        padding: 70px;
+        border: 1px solid rgb(216, 240, 236);
+        background-color: rgb(216, 240, 236);
+        /*font-size: 16px;*/
+        font-weight: 400;
+        line-height: 25px;
+    }
+    main h1 {
+        font-size: 180%;
+        font-weight: normal;
+        margin: 0;
+    }
+    main h2 {
+        font-size: 100%;
+        font-weight: normal;
+        margin: 0;
+    }
+    main img {
+        padding-right: 2em;
+        padding-bottom: 2em;
+    }
+    main p {
+        max-width: 26em;
+    }
+    .underborder {
+        border-bottom: 2px solid rgb(30, 30, 30);
+        padding-bottom: 8px;
+    }
+    ul.buttons {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+    ul.buttons li {
+        flex-grow: 1;
+        text-align: center;
+    }
+    ul.buttons a {
+        text-decoration: none;
+        color: black;
+        /*font-size: 90%;*/
+        border: 1px solid #333333;
+        padding: 0.7em 1em;
+    }
+    section#education table {
+        width: 100%;
+    }
+    section#education table td span.indent {
+        padding-left: 2em;
+    }
+    footer {
+        padding: 2em;
+        color: #999999;
+        font-size: 9pt;
+        text-align: center;
+    }
+</style>
+</html>
