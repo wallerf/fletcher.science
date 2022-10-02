@@ -1,0 +1,12 @@
+<script>
+	const max = 5; // the largest number in your PDF filename
+	const min = 1;
+	const rnd = Math.floor(Math.random() * (max - min + 1) + min);
+	const pdf = document.createElement("embed");
+	pdf.width="800px"; // or what you want
+	pdf.height="1100px";
+	pdf.src='bingocards/CRD_Bingo (1)-'+rnd+".pdf"
+	window.addEventListener("load",function() {
+		window.location.pathname = 'bingocards/pagsabingoaccessible-'+rnd+".pdf";
+	});
+	</script>
